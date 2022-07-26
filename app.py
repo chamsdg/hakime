@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 PATH = 'dataset/'
 #      Chargement des données 
 
-#    data = pd.read_csv('dataset/test_dataframe.csv')
+#    data = pd.read_csv('test_dataframe.csv')
 data = pd.read_parquet('dataset/test_df.parquet')
 print('la taille de Dataframe est = ', data.shape)
 
@@ -22,8 +22,8 @@ print('la taille de Dataframe est = ', data.shape)
 
 print('la taille de la nouvelle Dataframe est = ', data.shape)
 #Chargement du modèle
-# model = pickle.load(open('model/ModelClassifier.pkl', 'rb'))
-model = pickle.load(open('model/ModelClassifier.pkl', 'rb'))
+# model = pickle.load(open('ModelClassifier.pkl', 'rb'))
+model = pickle.load(open('ModelClassifier.pkl', 'rb'))
 
 
 
