@@ -89,7 +89,10 @@ def prediction_credit(id_client):
 #       return app
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
+    app.run(port=5000)
+
+#if __name__ == "__main__":
     #import myapp
     #waitress.serve(myapp.wsgifunc, port=8041, url_scheme='https')
     ## from waitress import serve
@@ -102,5 +105,5 @@ if __name__ == "__main__":
     #http://127.0.0.1:5000
     ##serve(app, host="0.0.0.0", port=8080)
     ##app.run(debug=True)
-    app.debug = True
-    app.run()
+    #app.debug = True
+    #app.run()
