@@ -89,17 +89,5 @@ def prediction_credit(id_client):
 
 
 if __name__ == "__main__":
-    #app.secret_key = "krankenhouse"
-    #waitress.serve(myapp.wsgifunc, port=8041, url_scheme='https')
-    ## from waitress import serve
-    #app.run(host = 'localhost', port = 8088, debug = True)
-    ## serve(app, host="127.0.0.1", port=8000)
-    #uvicorn.run(app = '127.0.0.1', port = 8000, debug = True)
-    ##app.run(host = 'localhost', port = 8088, debug = True)
-    ## from waitress import serve
-    #app.run(host = '127.0.0.1', port = 5000, debug = True)
-    #http://127.0.0.1:5000
-    ##serve(app, host="0.0.0.0", port=8080)
-    ##app.run(debug=True)
     app.debug = True
     app.run()
