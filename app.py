@@ -21,7 +21,7 @@ print('la taille de Dataframe est = ', data.shape)
 
 print('la taille de la nouvelle Dataframe est = ', data.shape)
 #Chargement du modèle
-# model = pickle.load(open('ModelClassifier.pkl', 'rb'))
+# model = pickle.load(open('model/ModelClassifier.pkl', 'rb'))
 model = pickle.load(open('ModelClassifier.pkl', 'rb'))
 
 
@@ -38,8 +38,8 @@ def hello():
 
 
 
-@app.route('/credit/<id_client>')
-def credit(id_client):
+@app.route('/prediction_credit/<id_client>', methods=['GET'])
+def prediction_credit(id_client):
 
     print('id client = ', id_client)
     
